@@ -12,8 +12,44 @@ html{
     height: 100%;
 }
 
-.grid-container > *{
-   text-align: center;
-   border-radius: 15px;
-   padding: 10px;
+/* Teléfono */
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "footer";
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 899px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "footer";
+    }
+}
+
+/* Escritorio */
+@media (min-width: 900px){
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "footer";
+    }
+}
+
+.grid-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #ffffff 50%, #e4c1f9 51%, #ff99c8 70%, #a9def9 75%, #d0f4de 90%, #fcf6bd 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+
 }
