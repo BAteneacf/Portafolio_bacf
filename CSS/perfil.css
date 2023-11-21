@@ -1,10 +1,48 @@
-* {
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Monaco', monospace;
 }
 
+body{
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+.grid-container > *{
+    text-align: center;
+}
+
+/* Teléfono */
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "body";
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 899px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "body";
+    }
+}
+
+/* Escritorio */
+@media (min-width: 900px){
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "body";
+    }
+}
 body {
     min-height: 100%;
     display: flex;

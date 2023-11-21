@@ -13,6 +13,9 @@ html{
     height: 100%;
 }
 
+.grid-container > *{
+    text-align: center;
+}
 
 /* Teléfono */
 @media only screen and (max-width: 767px) {
