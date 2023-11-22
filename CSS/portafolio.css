@@ -94,5 +94,9 @@ html{
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    text-decoration: none;
 }
+
+ a{
+    color:white;
+    text-decoration: none;
+ }
