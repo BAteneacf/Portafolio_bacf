@@ -17,6 +17,12 @@ html{
     text-align: center;
 }
 
+.grid-container > * {
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px; 
+}
+
 /* Teléfono */
 @media only screen and (max-width: 767px) {
     .grid-container {
@@ -43,18 +49,13 @@ html{
         grid-template-areas: "body";
     }
 }
+
 body {
     min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e4c1f9;
-}
-
-.grid-container > * {
-    text-align: center;
-    border-radius: 15px;
-    padding: 10px; 
 }
 
 .content {
@@ -81,4 +82,9 @@ ul {
 a{
     text-decoration: none;
     color:black;
+}
+
+.parrafo1{
+    text-decoration: none;
+    color: #fcf6bd;
 }
