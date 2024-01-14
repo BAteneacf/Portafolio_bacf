@@ -7,21 +7,8 @@
     <link rel="stylesheet" href="./CSS/navbar.css">
 </head>
 <body class="grid-container">
- <!-- Se insertará una función con js que hará que el mismo boton abra y cierre el navbar -->
-        <ul class="boton-lista">
-            <li><button class="btnperfil"><a href="/perfil.html" title="Perfil">Perfil</a></button></li>
-        </br>
-        </br>
-        </br>
-            <li><button class="btnpotafolio"><a href="/portafolio.html" title="Portafolio">Portafolio</a></button></li>
-        </br>
-        </br>
-        </br>   
-            <li><button class="btncontacto"><a href="/contacto.html" title="Contáctame">Contáctame</a></button></li>
-        </br>
-        </br>
-        </br>
-        </ul>
-    </body>
-    
+    <button class="burger-btn" onclick="toggleMenu()">☰</button>
+    <ul class="boton-lista" id="nav-list"></ul>
+    <script src="./JS/main.js"></script>
+</body>
 </html>

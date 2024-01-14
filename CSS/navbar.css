@@ -43,6 +43,7 @@ html{
         grid-template-areas: "body";
     }
 }
+/* navbar.css */
 .grid-container {
     display: grid;
     place-items: center;
@@ -54,13 +55,39 @@ html{
 .boton-lista {
     list-style: none;
     padding: 0;
-    margin-bottom: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .boton-lista li {
-    display: block;
-    margin-right: 10px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+/* navbar.css */
+.boton-lista button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px;
+
+}
+
+
+.btnperfil {
+    background-color: #ff99c8; 
+}
+
+.btnportafolio {
+    background-color: #a9def9; 
+}
+
+.btncontacto {
+    background-color: #e4c1f9; 
 }
 
 a{
@@ -68,35 +95,14 @@ a{
     color: black;
 }
 
-.btnperfil{
-    background-color: #ff99c8;
-    color: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    padding: 10px 20px;
+/* navbar.css */
+.burger-btn {
+    font-size: 20px;
     cursor: pointer;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.btnpotafolio{
-    background-color: #a9def9;
-    color: black;
-    border: 1px solid black;;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.btncontacto {
-    background-color: #e4c1f9;
-    color: black;
-    border: 1px solid black;;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    z-index: 2;
 }
